@@ -1,0 +1,150 @@
+body {
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+    color: hsl(212, 23%, 69%);
+    margin: auto;
+}
+
+.box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    position: relative;
+}
+
+.dark-text {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-content-padding {
+    padding: 31px 40px 10px 40px;
+}
+
+.drawer-image img {
+    width: 338px;
+    height: 160px;
+    border-radius: 10px 10px 0 0;
+}
+
+.text-content {
+    width: 338px;
+    border-radius: 0 0 10px 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.header {
+    font-size: 16px;
+}
+
+
+/* Profile Details Section */
+
+.profile-details {
+    display: flex;
+    gap: 10px;
+}
+
+.michelle-pic img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.profile-info p {
+    margin: 5px 49px 0px 10px;
+}
+
+.share-1-icon {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    cursor: pointer;
+}
+
+
+/* share section */
+
+.share-section {
+    background-color: hsl(217, 19%, 35%);
+    width: 338px;
+    border-radius: 0 0 10px 10px;
+    padding: 15px 40px 3px 40px;
+    position: absolute;
+    bottom: 0;
+}
+
+.share {
+    letter-spacing: 3px;
+}
+
+.socia-icon img {
+    margin-left: 12px;
+}
+
+.socia-icon :nth-child(4) {
+    background-color: hsl(214, 17%, 51%);
+    color: white;
+}
+
+.share-2-icon {
+    text-align: right;
+    background-color: hsl(214, 17%, 51%);
+    border-radius: 100%;
+    padding: 5px;
+    position: relative;
+    left: 70px;
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.hide {
+    display: none;
+}
+
+@media (min-width:850px) {
+    .box {
+        grid-template-columns: auto auto;
+        margin-top: 0;
+        height: 100vh;
+    }
+    .drawer-image img {
+        height: 294px;
+        border-radius: 10px 0 0 10px;
+    }
+    .text-content {
+        width: 425px;
+        height: 294px;
+        border-radius: 0 10px 10px 0;
+    }
+    .profile-info p {
+        margin: 5px 135px 0px 10px;
+    }
+    .share-section {
+        position: relative;
+        background-color: hsl(217, 19%, 35%);
+        width: 12.2rem;
+        border-radius: 10px;
+        padding: 15px 14px 0px 20px;
+        bottom: 100px;
+        left: 271px;
+    }
+    .share-2-icon {
+        display: none;
+    }
+}
